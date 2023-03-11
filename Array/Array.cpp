@@ -24,8 +24,6 @@ void count01(vector<int> &arr)
     cout << "No of 1 is " << count1 << endl;
 }
 
-
-
 // QUESTION 2 => SOLUTION
 int findMaximum(vector<int> &arr)
 {
@@ -40,8 +38,6 @@ int findMaximum(vector<int> &arr)
     return maxi;
 }
 
-
-
 // QUESTION 3 => SOLUTION
 int findMini(vector<int> &arr)
 {
@@ -55,8 +51,6 @@ int findMini(vector<int> &arr)
     }
     return mini;
 }
-
-
 
 // QUESTION 4 => SOLUTION
 int findSum(vector<int> &arr)
@@ -82,8 +76,6 @@ void extremePrint(vector<int> &arr)
     }
 }
 
-
-
 // QUESTION 6 => SOLUTION
 void findUnion(vector<int> &arr1, vector<int> &arr2)
 {
@@ -104,8 +96,6 @@ void findUnion(vector<int> &arr1, vector<int> &arr2)
         cout << item << " ";
     }
 }
-
-
 
 // QUESTION 7 => SOLUTION
 void findIntersection(vector<int> &arr1, vector<int> &arr2)
@@ -130,8 +120,6 @@ void findIntersection(vector<int> &arr1, vector<int> &arr2)
         cout << item << " ";
 }
 
-
-
 // QUESTION 8 => SOLUTION
 int pairSum(vector<int> &arr, int target)
 {
@@ -150,8 +138,6 @@ int pairSum(vector<int> &arr, int target)
     }
     return false;
 }
-
-
 
 // QUESTION 9 => SOLUTION
 int tripletSum(vector<int> &arr, int target)
@@ -175,8 +161,6 @@ int tripletSum(vector<int> &arr, int target)
     return false;
 }
 
-
-
 // QUESTION 10 =>  SOLUTION
 void sort01(vector<int> &arr)
 {
@@ -197,7 +181,6 @@ void sort01(vector<int> &arr)
         }
     }
 }
-
 
 
 int main()
@@ -260,11 +243,9 @@ int main()
     // }
 
     // QUESTION 10 => SORT 0 and 1 ...................
-    vector<int> arr{1, 1, 1, 1, 1, 0, 1, 0, 1, 0};
-    sort01(arr);
-    for(auto item : arr) cout << item << " ";
-
-
+    // vector<int> arr{1, 1, 1, 1, 1, 0, 1, 0, 1, 0};
+    // sort01(arr);
+    // for(auto item : arr) cout << item << " ";
 
     
 }
