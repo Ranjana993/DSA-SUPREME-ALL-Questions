@@ -1,7 +1,6 @@
 #include <iostream>
 #include <limits.h>
 #include <vector>
-
 using namespace std;
 
 // QUESTION 1 => SOLUTION
@@ -182,6 +181,54 @@ void sort01(vector<int> &arr)
     }
 }
 
+// QUESTION 11 SOLUTION
+
+void sortArrayColor(vector<int> &arr)
+{
+    int start = 0, low = 0, end = arr.size() - 1;
+    while (low <= end)
+    {
+        if (arr[low] == 0)
+        {
+            swap(arr[low], arr[start]);
+            low++;
+            start++;
+        }
+        else if (arr[low] == 1)
+        {
+            low++;
+        }
+        else
+        {
+            swap(arr[low], arr[end]);
+            end--;
+        }
+    }
+}
+
+// QUESTION 12 SOLUTION
+
+void sortArrayByNegPos(vector<int> &arr)
+{
+    int start = 0, end = arr.size() - 1;
+    while (start <= end)
+    {
+        if (arr[start] < 0)
+        {
+            start++;
+        }
+        else if (arr[end] > 0)
+        {
+            end--;
+        }
+        else
+        {
+            swap(arr[start], arr[end]);
+            start++;
+            end--;
+        }
+    }
+}
 
 int main()
 {
@@ -247,5 +294,15 @@ int main()
     // sort01(arr);
     // for(auto item : arr) cout << item << " ";
 
-    
+    // QUESTION 11 => SORT COLOR ( SORT AN ARAY BY 0 , 1 , 2 )......
+    // vector<int> arr{1, 1, 1, 2, 2, 2, 0, 0, 2, 1, 0};
+    // sortArrayColor(arr);
+    // for (auto i : arr)
+    //     cout << i << " ";
+
+    // QUESTION 12 => MOVE ALL NEGATIVE TO LEFT OF ARRAY ......
+    // vector<int> arr{2, 3, 4, 5, -2, -4, -1, -4, 6};
+    // sortArrayByNegPos(arr);
+    // for (auto i : arr)
+    //     cout << i << " ";
 }
